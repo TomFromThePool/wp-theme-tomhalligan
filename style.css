@@ -1,0 +1,72 @@
+/*
+Theme Name: Tom Halligan
+Theme URI: https://github.com/TomFromThePool/wp-theme-tomhalligan
+Description: Built upon BlankSlate by TidyThemes
+Author: Tom Halligan
+Author URI: http://www.tomhalligan.co.uk/
+Version: 0.1
+Tags: one-column, flexible-width, custom-menu, featured-images, microformats, sticky-post, threaded-comments
+License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
+License URI: https://www.gnu.org/licenses/gpl.html
+*/
+
+@import url("../blankslate/style.css");
+
+body{
+	font-family: 'Advent Pro', sans-serif;
+
+}
+
+
+div#header{
+	height: 75px;	
+}
+
+div#branding{
+	float: left;
+	font-variant: small-caps;
+}
+
+div#blog-title{
+	padding: 1em;
+	background-color: lightblue;
+
+}
+
+div#blog-title h1 a{
+	font-weight: bold;
+	padding-right: 1em;
+	padding-left: 0.5em;
+	font-size: x-large;
+}
+div#branding a, div#branding a:visited{
+	text-decoration: none;
+	color: white;	
+}
+
+div#branding a:hover{
+	border-bottom: solid 1px white;
+}
+
+div#search{
+	float: right;
+	font-variant: small-caps;
+	padding: 1em;
+
+}
+
+div#search-inputs{
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+	height: 100%;
+}
+
+div#search-inputs input[type=text], div#search-inputs input[type=text]:focus{
+	font-family: 'Advent Pro', sans-serif;
+	border: none;
+	border-bottom: solid 1px lightblue;
+	height: 100%;
+	line-height: 1em;
+	font-size: x-large;
+	outline: none;
+}
