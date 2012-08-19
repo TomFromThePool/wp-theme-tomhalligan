@@ -3,9 +3,6 @@
 <head>
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
-<!-- Advent Pro Font -->
-<link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
-
 <!-- Stylesheet -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -16,7 +13,7 @@
 <header>
 <div id="header">
 	<div id="branding">
-		<div id="blog-title"><?php if ( is_singular() ) {} else {echo '<h1>';} ?><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a><?php if ( is_singular() ) {} else {echo '</h1>';} ?></div>
+		<div id="blog-title"><?php if ( is_singular() ) {echo '<h1>';} else {echo '<h1>';} ?><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a><?php if ( is_singular() ) {echo '</h1>';} else {echo '</h1>';} ?></div>
 	</div>
 	<div id="search">
 		<?php get_search_form(); ?>

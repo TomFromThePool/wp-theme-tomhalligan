@@ -1,4 +1,4 @@
-<aside id="sidebar">
+<?php /*<aside id="sidebar">*/ ?>
 <?php if ( is_active_sidebar('primary-widget-area') ) : ?>
 <div id="primary" class="widget-area">
 <ul class="sid">
@@ -6,4 +6,4 @@
 </ul>
 </div>
 <?php endif; ?>
-</aside>
+<?php /*</aside>*/ ?>
