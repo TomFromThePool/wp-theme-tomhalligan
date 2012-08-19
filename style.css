@@ -17,9 +17,8 @@ body{
 
 }
 
-
 div#header{
-	height: 75px;	
+	height: 75px;
 }
 
 div#branding{
@@ -29,23 +28,26 @@ div#branding{
 
 div#blog-title{
 	padding: 1em;
-	background-color: lightblue;
 
+}
+
+div#blog-title h1{
+	padding: 0px;	
 }
 
 div#blog-title h1 a{
 	font-weight: bold;
 	padding-right: 1em;
 	padding-left: 0.5em;
-	font-size: x-large;
+	font-size: xx-large;
 }
 div#branding a, div#branding a:visited{
 	text-decoration: none;
-	color: white;	
+	color: #aaa;	
 }
 
 div#branding a:hover{
-	border-bottom: solid 1px white;
+	border-bottom: solid 1px lightblue;
 }
 
 div#search{
@@ -69,4 +71,45 @@ div#search-inputs input[type=text], div#search-inputs input[type=text]:focus{
 	line-height: 1em;
 	font-size: x-large;
 	outline: none;
+}
+
+
+div#navbar{
+	font-size: xx-large;
+	font-variant: small-caps;
+	margin-bottom: 25px;
+}
+
+
+div#navbar a, div#navbar a:visited{
+	text-decoration: none;
+	color: lightblue;
+	font-weight: bolder;	
+}
+
+div#navbar ul{
+	padding-left: 1em;
+	display: block;
+}
+
+div#navbar li{
+	display: inline;
+	padding: 0px;
+	margin-right: 15px;
+}
+
+div#navbar li:hover{
+	border-bottom: solid 1px lightblue;	
+}
+
+
+div#navbar .current-menu-item{
+	border-bottom: solid 1px lightblue;	
+}
+
+div#navbar li a{
+}
+
+div#container{
+	
 }

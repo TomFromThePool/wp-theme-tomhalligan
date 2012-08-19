@@ -15,18 +15,17 @@
 <div id="wrapper" class="hfeed">
 <header>
 <div id="header">
-<div id="branding">
-<div id="blog-title"><?php if ( is_singular() ) {} else {echo '<h1>';} ?><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a><?php if ( is_singular() ) {} else {echo '</h1>';} ?></div>
-<p id="blog-description"><?php bloginfo( 'description' ) ?></p>
-</div>
-<div id="search">
-<?php get_search_form(); ?>
-</div>
+	<div id="branding">
+		<div id="blog-title"><?php if ( is_singular() ) {} else {echo '<h1>';} ?><a href="<?php echo home_url() ?>/" title="<?php bloginfo( 'name' ) ?>" rel="home"><?php bloginfo( 'name' ) ?></a><?php if ( is_singular() ) {} else {echo '</h1>';} ?></div>
+	</div>
+	<div id="search">
+		<?php get_search_form(); ?>
+	</div>
 </div>
 </header>
-<div id="navbar">
 <nav>
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+	<div id="navbar">
+		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+	</div>
 </nav>
-</div>
 <div id="container">
