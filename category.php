@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <div id="content">
 <?php the_post(); ?>
-<h1 class="page-title"><?php _e( 'Category Archives for', 'blankslate' ) ?> <span><?php single_cat_title() ?></span></h1>
-<?php $categorydesc = category_description(); if ( !empty($categorydesc) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); ?>
+<h1 class="page-title"><?php/* _e( 'Category Archives for', 'blankslate' ) */?> <span><?php single_cat_title() ?></span></h1>
+<?php /*$categorydesc = category_description(); if ( !empty($categorydesc) ) echo apply_filters( 'archive_meta', '<div class="archive-meta">' . $categorydesc . '</div>' ); */?>
 <?php rewind_posts(); ?>
 <?php global $wp_query; $total_pages = $wp_query->max_num_pages; if ( $total_pages > 1 ) { ?>
 <div id="nav-above" class="navigation">

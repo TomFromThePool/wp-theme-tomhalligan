@@ -20,9 +20,9 @@
 	</div>
 </div>
 </header>
+<div id="container">
 <nav>
 	<div id="navbar">
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 	</div>
 </nav>
-<div id="container">
