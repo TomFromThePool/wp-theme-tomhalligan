@@ -1,11 +1,11 @@
 /*
-Theme Name: Tom Halligan
+Theme Name: No Fuss
 Theme URI: https://github.com/TomFromThePool/wp-theme-tomhalligan
-Description: Built upon BlankSlate by TidyThemes
+Description: A light, minimal theme which is easy on the eyes. Built upon BlankSlate by TidyThemes
 Author: Tom Halligan
 Author URI: http://www.tomhalligan.co.uk/
-Version: 0.2
-Tags: one-column, flexible-width, custom-menu, featured-images, microformats, sticky-post, threaded-comments
+Version: 1.0
+Tags: clean, fresh, light, minimal, modern, blue, white, simple
 License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
 License URI: https://www.gnu.org/licenses/gpl.html
 */
@@ -15,9 +15,6 @@ License URI: https://www.gnu.org/licenses/gpl.html
 
 /*OpenSans Condensed Font*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
-
-/*Share Font*/
-@import url(http://fonts.googleapis.com/css?family=Share:400,700);
 
 /*Open Sans Font*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -225,21 +222,30 @@ a{
 
 }
 
-.entry-meta, .entry-utility{
+.entry-meta, .entry-utility, .comment-meta{
 	font-size: x-small;	
 }
 
-.entry-meta, .entry-content, .entry-summary .entry-utility{
+.entry-meta, .entry-content, .entry-summary .entry-utility, .comment-meta{
 	padding-left: 0.5em;	
 }
 
 /** Post content **/
 
-.entry-content, .entry-summary{
-	font-size: small;
+.entry-content, .entry-summary, .comment-content{
+	font-size: 0.9em;
 	line-height: 2;
 	font-weight: normal;
 	padding: 1em;	
+}
+
+.entry-content img{
+	border-top: solid 1px #aaa;
+	border-left: solid 1px #aaa;
+	border-right: solid 1px #333;
+	border-bottom: solid 1px #333;
+	box-shadow: 5px 5px 5px #aaa;
+	padding: 5px;	
 }
 
 .entry-content p{
@@ -305,8 +311,88 @@ COMMENTS
 	font-size: small;
 }
 
+#comments-list{
+	padding-top: 2em;	
+}
+
+#comments-list h3, #trackbacks-list h3, #respond h3{
+	font-size: large;	
+}
+
+#comments .comment:last-of-type, #trackbacks-list .pingback:last-of-type{
+	margin-bottom: 2em;	
+}
+
+.comment, .pingback{
+	margin-top: 1em;	
+}
+
+.comment div, .pingback div{
+	padding: 0.2em;
+}
+
+.comment div:last-of-type, .pingback div:last-of-type{
+	border-bottom: dotted 2px #ccc;
+}
+
+.comment-author span{
+	font-size: large;
+	vertical-align: top;	
+}
+
+.comment-author span a{
+	vertical-align: top;	
+}
+
+.comment-author .avatar{
+	border-top: solid 1px #AAA;
+	border-left: solid 1px #AAA;
+	border-right: solid 1px #333;
+	border-bottom: solid 1px #333;
+	box-shadow: 5px 5px 5px #AAA;
+	margin-right: 1em;
+	margin-bottom: 1em;
+}
+
+ul.children{
+	padding-left: 2em;
+	margin: 0;
+}
+
+.comment-reply-link{
+	text-align: right;
+	padding-bottom: 0.2em;	
+}
+
+#commentform{
+	padding-top: 1em;	
+}
+
+#commentform .form-section{
+	padding-bottom: 0.5em;	
+}
+
+#comment-notes{
+	padding-bottom: 0.5em;	
+}
+
 /** Footer **/
 footer{
+	font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
 	clear: both;
 	text-align: center;
+}
+
+/** Page Specific **/
+
+/** About **/
+.page-about .featured-image-container{
+	float: right;
+	margin: 1em;
+	position: relative;
+}
+
+.page-about .wp-post-image{
+	height: 125px;
+	width: 125px;
 }
