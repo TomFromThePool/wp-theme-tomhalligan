@@ -17,10 +17,10 @@
 </div>
 <div class="entry-content">
 <?php 
-if ( has_post_thumbnail() ) {
-the_post_thumbnail();
-} 
-?>
+if ( has_post_thumbnail() ) :?>
+<div class="featured-image-container">
+<?php the_post_thumbnail(); ?>
+</div><?php endif; ?>
 <?php the_content(); ?>
 <?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'blankslate' ) . '&after=</div>') ?>
 </div>

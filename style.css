@@ -4,7 +4,7 @@ Theme URI: https://github.com/TomFromThePool/wp-theme-tomhalligan
 Description: A light, minimal theme which is easy on the eyes. Built upon BlankSlate by TidyThemes
 Author: Tom Halligan
 Author URI: http://www.tomhalligan.co.uk/
-Version: 1.0
+Version: 1.1
 Tags: clean, fresh, light, minimal, modern, blue, white, simple
 License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
 License URI: https://www.gnu.org/licenses/gpl.html
@@ -150,6 +150,19 @@ div#navbar .current-menu-item a{
 div#navbar li a{
 }
 
+.navigation{
+	margin: 1em;
+	height: 1em;
+}
+
+.nav-previous{
+	float: left;
+}
+
+.nav-next{
+	float: right;	
+}
+
 
 /** Content area **/
 #content{
@@ -157,6 +170,13 @@ div#navbar li a{
 	float: left;
 	/*padding-left: 1em;*/
 	margin-bottom: 1em;
+}
+
+.wp-post-image{
+	display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;	
 }
 
 #content{
@@ -250,6 +270,19 @@ a{
 
 .entry-content p{
 	margin: 1em;	
+}
+
+.featured-image-container{
+	float: left;
+	margin-top: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	position: relative;
+}
+
+.wp-post-image{
+	height: 175px;
+	width: 175px;
 }
 
 blockquote{
@@ -384,15 +417,3 @@ footer{
 }
 
 /** Page Specific **/
-
-/** About **/
-.page-about .featured-image-container{
-	float: right;
-	margin: 1em;
-	position: relative;
-}
-
-.page-about .wp-post-image{
-	height: 125px;
-	width: 125px;
-}
