@@ -4,7 +4,7 @@ Theme URI: https://github.com/TomFromThePool/wp-theme-tomhalligan
 Description: A light, minimal theme which is easy on the eyes. Built upon BlankSlate by TidyThemes
 Author: Tom Halligan
 Author URI: http://www.tomhalligan.co.uk/
-Version: 1.12
+Version: 1.13
 Tags: clean, fresh, light, minimal, modern, blue, white, simple
 License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
 License URI: https://www.gnu.org/licenses/gpl.html
@@ -214,6 +214,7 @@ a{
 	text-decoration: underline;	
 }
 
+
 /** Post meta stuff **/
 .entry-title, .page-title{
 	font-family: 'Open Sans Condensed', sans-serif;
@@ -268,8 +269,32 @@ a{
 	padding: 5px;
 }
 
-.entry-content p{
-	margin: 1em;	
+.entry-content {
+	padding: 1em;	
+}
+
+.entry-content * {
+	margin-top: 1em;
+	margin-bottom: 1em;	
+}
+
+.entry-content ul, .entry-content ol {
+	margin-left: 2em;
+}
+.entry-content ol {
+	list-style-type: decimal;	
+}
+
+.entry-content ul {
+	list-style-type: circle;
+}
+
+.entry-content strong{
+	font-weight: bold;	
+}
+
+.entry-content em{
+	font-style: italic;	
 }
 
 .featured-image-container{
@@ -310,7 +335,7 @@ blockquote{
 	box-shadow: 5px 5px 5px #aaa;	
 }
 
-.entry-content h1{
+.entry-content h1, .entry-summary h1{
 	font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
 	font-size: large;
 	color: #7DC4FF;
@@ -319,7 +344,7 @@ blockquote{
 /** Sidebar **/
 #sidebar{
 	float: right;
-	width: 15%;
+	width: 12%;
 	margin-right: 1.5em;
 	border: solid 1px #7DC4FF;
 	padding-left: 1em;
