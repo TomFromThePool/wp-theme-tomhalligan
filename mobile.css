@@ -1,28 +1,21 @@
 /*
-Theme Name: No Fuss
-Theme URI: https://github.com/TomFromThePool/wp-theme-tomhalligan
-Description: A light, minimal theme which is easy on the eyes. Built upon BlankSlate by TidyThemes
-Author: Tom Halligan
-Author URI: http://www.tomhalligan.co.uk/
-Version: 1.13
-Tags: clean, fresh, light, minimal, modern, blue, white, simple
-License: GNU General Public License | This theme is completely free and open source to use as you like for both personal and commercial projects without any limitations.
-License URI: https://www.gnu.org/licenses/gpl.html
+Mobile CSS
 */
 
 /*BlankSlate styles*/
 @import url("../blankslate/style.css");
 
 /*OpenSans Condensed Font*/
-@import url("http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
 
 /*Open Sans Font*/
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 
 /**Default stuff **/
 body{
 	font-family: 'Open Sans', sans-serif;
+	background-color: black;
 }
 
 
@@ -41,16 +34,16 @@ div#header{
 
 div#branding{
 	float: left;
-	padding-left: 1em;
-	padding-top: 1em;
+	/*font-variant: small-caps;*/
 }
 
 div#blog-title{
+	padding: 1em;
 
 }
 
 div#blog-title h1{
-	padding: 0;	
+	padding: 0px;	
 }
 
 div#blog-title h1 a{
@@ -80,7 +73,7 @@ div#search-inputs{
 	height: 100%;
 }
 
-div#search-inputs input[type=text]{
+div#search-inputs input[type=text], div#search-inputs input[type=text]:focus{
 	font-family: 'Open Sans Condensed', sans-serif;
 	border: none;
 	border-bottom: solid 1px #7DC4FF;
@@ -88,13 +81,6 @@ div#search-inputs input[type=text]{
 	font-size: x-large;
 	outline: none;
 	color: #7DC4FF;
-}
-
-div#search-inputs input[type=text]:focus{
-}
-
-div#search-inputs input[type=text]:before{
-	content: "Search:"	
 }
 
 div#search-inputs input[type=submit]{
@@ -111,55 +97,50 @@ div#search-inputs input[type=submit]{
 /** Main nav menu **/
 nav{
 	float: left;
-	min-width: 15%;
-	display: block;	
-	clear: left;
+	width: 15%;	
 }
 
 #navbar{
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 2em;
+	font-size: xx-large;
 	margin-bottom: 1em;
 }
 
-#navbar div{
-	display: inline;	
-}
 
-
-#navbar a, #navbar a:visited{
-	/*display: block;*/
+div#navbar a, div#navbar a:visited{
+	display: block;
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
 	color: #aaa;
 	padding-top: 0.2em;
-	/*padding-left: 0.2em;*/
+	padding-left: 0.2em;
 	padding-bottom: 0.2em;
 }
 
-#navbar ul{
+div#navbar ul{
 	padding-left: 1em;
 }
 
-#navbar li{
+div#navbar li{
+
 	margin-bottom: 0.5em;
 }
 
-#navbar li a:hover{
+div#navbar li a:hover{
 	color: #7DC4FF;
 }
 
 
-#navbar .current-menu-item {
+div#navbar .current-menu-item {
 	border-bottom: solid 1px #7DC4FF;
 }
 
-#navbar .current-menu-item a{
+div#navbar .current-menu-item a{
 	color: #7DC4FF;
 }
 
-#navbar li a{
+div#navbar li a{
 }
 
 .navigation{
@@ -349,7 +330,7 @@ blockquote{
 
 .entry-content h1, .entry-summary h1{
 	font-family: 'Open Sans Condensed', 'Open Sans', sans-serif;
-	font-size: x-large;
+	font-size: large;
 	color: #7DC4FF;
 }
 

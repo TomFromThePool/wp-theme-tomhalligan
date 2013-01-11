@@ -4,7 +4,10 @@
 <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 <!-- Stylesheet -->
-<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" />
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/mobile.css" media="handheld"/>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory');?>/responsive.css"/>
+
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_head(); ?>
 </head>

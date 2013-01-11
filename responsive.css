@@ -1,0 +1,44 @@
+@media screen and (max-width: 320px) { 
+	body{
+	}
+}
+
+@media screen and (max-width: 640px) {
+	body{
+	}
+}
+
+
+/**
+* Site becomes difficult to read at about 800px width
+*/
+@media screen and (max-width: 800px) { 
+	/**
+	Navigation should be shoved to the top
+	**/
+	nav{
+		float: none;
+	}
+	#navbar li{
+		display: inline;
+		margin-right: 0.5em;
+	}
+	
+	/**More width for content and sidebar**/
+	#content{
+		width: 70%;
+		margin-left: 2em;
+	}
+	
+	#sidebar{
+		width: 15%;	
+	}
+}
+
+@media screen and (max-width: 1024px) { 
+
+}
+
+@media screen and (max-width: 1028px) { 
+
+}

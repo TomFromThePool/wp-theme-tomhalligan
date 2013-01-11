@@ -25,6 +25,14 @@ return 'Untitled';
 return $title;
 }
 }
+
+/** Read More link **/
+function new_excerpt_more($more) {
+       global $post;
+	return '...[<a href="'. get_permalink($post->ID) . '">Read more</a>]';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 function blankslate_register_menus() {
 register_nav_menus(
 array( 'main-menu' => __( 'Main Menu', 'blankslate' ))
